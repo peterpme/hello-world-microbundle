@@ -7,7 +7,7 @@
   "module": "dist/index.mjs",
   "source": "src/index.js",
   "scripts": {
-    "build": "microbundle --name HelloWorld --global react=React,react-dom=ReactDOM --target browser --jsx React.createElement",
+    "build": "microbundle --global react=React,react-dom=ReactDOM --external react --target browser --name HelloWorld --jsx React.createElement",
     "dev": "microbundle watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
