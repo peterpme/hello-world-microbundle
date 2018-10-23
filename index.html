@@ -10,7 +10,8 @@
     <script src="./dist/index.umd.js"></script>
     <script>
       console.log(window)
-      window.ReactDOM.render(React.createElement(HelloWorld), document.getElementById('root'))
+      window.e = React
+      window.ReactDOM.render(React.createElement(window.HelloWorld), document.getElementById('root'))
     </script>
   </body>
 </html>
