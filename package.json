@@ -7,18 +7,18 @@
   "module": "dist/index.mjs",
   "source": "src/index.js",
   "scripts": {
-    "build": "microbundle --compress false --global react=React,react-dom=ReactDOM --external react --target browser --name HelloWorld --jsx React.createElement",
+    "build": "microbundle --compress false --globals react=React,react-dom=ReactDOM --external react --target browser --name HelloWorld --jsx React.createElement",
     "dev": "microbundle watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "microbundle": "^0.6.0"
+    "microbundle": "^0.7.0-beta.0"
   },
   "peerDependencies": {
+    "prop-types": "*",
     "react": "*",
-    "react-dom": "*",
-    "prop-types": "*"
+    "react-dom": "*"
   }
 }
